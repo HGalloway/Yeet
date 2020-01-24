@@ -1,0 +1,20 @@
+Batch:
+1.Add user deletion and addition.*1
+2.Add update authorized applications.
+3.Enable firewall.
+4.Disable telnet.*3
+5.Check for unneeded software and delete if unneeded or dangerous.*1
+Bash:
+1.Add user deletion and addition.*1
+2.Enable firewall.
+3.Download and use lynis.*4
+4.Disable root access.*2*3
+5.Check for unneeded software and delete is unneeded or dangerous.*1
+6.Update software and operating system.*4
+7.Disable root access through ssh.
+8.Password Policy.
+Notes:
+*1:Ask for comformation before executing.
+*2:Ask if user wants this done if doing all option.
+*3:Ask if this needs to be done.
+*4:Wait till end to execute.
