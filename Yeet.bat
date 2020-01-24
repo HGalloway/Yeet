@@ -6,8 +6,10 @@ echo "You better run this as root or imma smack you"
 set /p wdyw= What the hell do you want to do?
 echo "Enter everything as written"
 echo "1.Password Policy"
+echo "2.User Authentication"
 echo "5.Gun Its Cheeks"
 if "%wdyw%"=="Password policy" GOTO:PASSPOL
+if "%wdyw%"=="User Authentication" GOTO:USERAUTH
 if "%wdyw%"=="Gun its Cheeks" GOTO:GUNITSCHEEKS
 :PASSPOL
 echo "1.Password Policy"
@@ -22,6 +24,9 @@ echo "Set minimum password age."
 net accounts /minpwage:10
 echo "Set minimum length."
 net accounts /minpwlen: 12
+:USERAUTH
+echo "Users:"
+set /p del="
 :GUNITSCHEEKS
 echo "1.Password Policy"
 echo " "
