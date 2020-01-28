@@ -15,21 +15,25 @@ if "%wdyw%"=="Gun its Cheeks" GOTO:GUNITSCHEEKS
 :PASSPOL
 echo "1.Password Policy"
 echo " "
-echo "Turns on expiry passwords."
+echo "Turning on expiry passwords."
 wmic UserAccount set PasswordExpires=True
-echo "Set maximum password age."
+echo "Setting maximum password age."
 net accounts /maxpwage:30
-echo "Set password history."
+echo "Setting password history."
 net accounts /uniquepw:5
-echo "Set minimum password age."
+echo "Setting minimum password age."
 net accounts /minpwage:10
-echo "Set minimum length."
+echo "Setting minimum length."
 net accounts /minpwlen: 12
 :USERAUTH
 echo "Do you want to add or delete a user"
 echo "If you don't want to then enter 'Nope'"
 set /p aod=""
 if "%aod%"=="Delete" goto:Delete
+if "%aod%"=="Add" goto:Add
+:Add 
+echo "Name of user you want to add:"
+set /p
 :Delete
 echo "Users:"
 net users
