@@ -1,4 +1,5 @@
 @echo off
+:YEET
 echo "_____________________"
 echo "___      YEET     ___"
 echo "_____________________"
@@ -25,8 +26,21 @@ net accounts /minpwage:10
 echo "Set minimum length."
 net accounts /minpwlen: 12
 :USERAUTH
+echo "Do you want to add or delete a user"
+echo "If you don't want to then enter 'Nope'"
+set /p aod=""
+if "%aod%"=="Delete" goto:Delete
+:Delete
 echo "Users:"
-set /p del="
+net users
+echo "What user do you want to delete?"
+set /p del=""
+echo "Are you sure you want to delete %del%" 
+set /p yon=""
+if "%yon%"=="Yes" net user "%del%" /delete
+goto:USERAUTH
+if "%yon%"=="No" goto:USERAUTH
+if "%aod%"=="Nope" goto:YEET
 :GUNITSCHEEKS
 echo "1.Password Policy"
 echo " "
