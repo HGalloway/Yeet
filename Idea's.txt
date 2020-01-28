@@ -2,8 +2,7 @@ Batch:
 1.Add user deletion and addition.*1 //DONE
 2.Add update authorized applications.
 3.Enable firewall.
-4.Disable telnet.*3
-5.Check for unneeded software and delete if unneeded or dangerous.*1
+4.Check for unneeded software and delete if unneeded or dangerous.*1
 Bash:
 1.Add user deletion and addition.*1
 2.Enable firewall.
