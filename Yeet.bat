@@ -33,7 +33,11 @@ if "%aod%"=="Delete" goto:Delete
 if "%aod%"=="Add" goto:Add
 :Add 
 echo "Name of user you want to add:"
-set /p
+set /p add=""
+set /p password="Password:"
+echo "So you want to add a user by the name of %add% and with the password of %password%"
+set /p yos=""
+if "%%"
 :Delete
 echo "Users:"
 net users
