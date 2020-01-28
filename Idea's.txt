@@ -1,5 +1,5 @@
 Batch:
-1.Add user deletion and addition.*1
+1.Add user deletion and addition.*1 //DONE
 2.Add update authorized applications.
 3.Enable firewall.
 4.Disable telnet.*3
